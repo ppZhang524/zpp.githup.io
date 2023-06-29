@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Home</title>
+
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+
+		<link rel="icon" href="images/logo1.1.jpg">
+		<link rel="shortcut icon" href="images/logo1.1.jpg" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/zerogrid.css" >
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+
+
+
+
+			
+	
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+		<style>
+			      #wrap {
+        overflow: hidden;
+        position: relative;
+        width: 1226px;
+        height: 580px;
+        margin: 200px auto 0;
+      }
+
+      #wrap .img-list {
+        display: flex;
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease;
+      }
+
+      #wrap .img-list img {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      #wrap a {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        display: block;
+        width: 40px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        user-select: none;
+        font-size: 30px;
+        text-align: center;
+        line-height: 70px;
+        text-decoration: none;
+      }
+
+      #wrap a.left {
+        left: 0;
+      }
+
+      #wrap a.right {
+        right: 0;
+      }
+
+      .circle-list {
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 240px;
+        height: 40px;
+        z-index: 8;
+      }
+      .circle-list > .circle {
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #ecf0f1;
+        border-radius: 50%;
+      }
+
+      .circle-list > .circle.active {
+        background-color: #e74c3c;
+      }
+
+		</style>
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="menu_block">
+							<nav class="">
+								<ul class="sf-menu">
+									<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">首页 </a> <strong class="hover"></strong></li>
+									<li class=" men1"><a onClick="goToByScroll('page2'); return false;" href="#">关于</a><strong class="hover"></strong></li>
+									<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">团队</a> <strong class="hover"></strong></li>
+									<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">影视</a> <strong class="hover"></strong></li>
+									<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">歌曲</a> <strong class="hover"></strong></li>
+									<li class=" men5"><a onClick="goToByScroll('page6'); return false;" href="#">舞蹈</a> <strong class="hover"></strong></li>
+									<li class=" men6"><a href="http://t.csdn.cn/z0ze3">结课报告</a> <strong class="hover"></strong></li>
+									<li class=" men7">
+										<audio  autoplay= "autoplay" loop="loop" controls="controls"><!--controls="controls"控件显示-->
+				<source src="https://ey-sycdn.kuwo.cn/99ac28e56967420beb4c294437591988/64988d4d/resource/n2/38/12/1277128717.mp3?from$unkown&plat$wapi" type="audio/mpeg">
+				<source src="https://ey-sycdn.kuwo.cn/99ac28e56967420beb4c294437591988/64988d4d/resource/n2/38/12/1277128717.mp3?from$unkown&plat$wapi" type="audio/ogg">
+				您的浏览器不支持 audio 标签
+			</audio>
+									</li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo1.2.png" alt="" style="height: 50px;width: 50px;">zpp</a></h1>
+					</div>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content" >
+			
+			<div class="zerogrid" style="width: 100%;height: 490px;"> 
+				<!-- <div class="col-full" style="background-color: black;"> -->
+					<!-- <div class="wrap-col" style="background-color: aliceblue;"> -->
+						<!-- <div class="slider_wrapper" style="background-color: aliceblue;"> -->
+							<!-- <ul class="items">
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>Let Us Show You the Way to Success</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>Interminable Energy for Your Project</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>We know how to solve your problems!</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>Make your business a booming one!</h2>
+									</div>
+								</li>
+							</ul> -->
+						<!-- </div> -->
+						
+
+						<!-- <div class="socials"> -->
+							<!-- <a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>		 -->
+						<!-- </div> -->
+			
+					<!-- </div> -->
+				<!-- </div> -->
+			<div class="title1">
+				<p style="color: brown;"> 易烊千玺 Jacson Yee</p>
+			</div>
+			<div id="banner" style="background-color:brown;">
+				<div class="img-list img-wrapper">
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/1.jpg" alt="">
+					</div>
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/2.jpg" alt="">
+					</div>
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/3.jpg" alt="">
+					</div>
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/4.jpg" alt="">
+					</div>
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/5.jpg" alt="">
+					</div>
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/6.jpg" alt="">
+					</div>
+					<div class="img-box" style="width: 20%;">
+						<img src="./asset/image/7.jpg" alt="">
+					</div>
+					<div class="img-box" id="last-img-box" style="width: 20%;">
+						<img src="./asset/image/8.jpg" alt="">
+					</div>
+				</div>
+				
+			</div>
+			<div class="btn-group">
+				<button class="last btn">
+					<svg t="1686471404424" class="icon left" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+						<path
+							d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+							fill="" p-id="2374"></path>
+					</svg>
+				</button>
+				<button class="next btn">
+					<svg t="1686471404424" class="icon right" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="2373" width="128" height="128">
+						<path
+							d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z"
+							fill="" p-id="2374"></path>
+					</svg>
+				</button>
+			</div>
+			</div>
+
+			
+		</div>
+		<div id="page2" class="content">
+
+			<div class="zerogrid">
+				<div class="col-1-2">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="asset/image/4.jpg" alt="">
+						</div>				
+					</div>				
+				</div> 
+				<div class="col-1-2">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<p>性别: 男</p>
+							<p>星座: 射手座</p>
+							<p>出生日期: 2000年11月28日</p>
+							<p>出生地: 中国,湖南,怀化</p>
+							<p>职业: 演员 / 配音 / 动作捕捉 / 音乐</p>
+							<p style="padding-left: 3%;padding-right: 3%;">易烊千玺是EXO、SJ等韩国偶像组合在中国活动时的小选手，练习生资格使得他拥有了凭借跳舞领域的人气。2015年，易烊千玺以<a onClick="goToByScroll('page3'); return false;" href="#"><span style="font-size: 18px;background-color: brown;">TFBOYS</span></a>组合成员身份出道，成为年轻人的偶像代表，TFBOYS组合三名成员的粉丝团体也成为了最大的少年团体之一。易烊千玺因其独特的舞蹈风格、帅气的外表、温柔的性格赢得了不少女孩子们的喜爱。在音乐上，他曾经创作演唱过大量的热门作品，由于其音乐、舞蹈和综艺才能，他曾被誉为中国娱乐界的全才。随着易烊千玺越来越受到大众的关注与喜爱，他也在电影、电视剧等领域中进行了不断的尝试和拓展，逐渐成为年轻演员的代表之一。</p>
+						</div>				
+					</div>				
+				</div> 
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="zerogrid">
+				
+				<div class="col-1-3">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/roy1.png" alt="">
+							<div class="text1"><a href="https://baike.baidu.com/item/%E7%8E%8B%E6%BA%90/5475062?fromModule=lemma_search-box">王源</a></div>Roy Wang
+						</div>
+					</div>
+				</div>
+				<div class="col-1-3">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/karry2.png" alt="">
+							<div class="text1"><a href="https://baike.baidu.com/item/%E7%8E%8B%E4%BF%8A%E5%87%AF/75850?fromModule=lemma_search-box">王俊凯</a></div>Karry Wang
+						</div>
+					</div>
+				</div>
+				<div class="col-1-3">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/jacson.png" alt="">
+							<div class="text1"><a href="https://baike.baidu.com/item/%E6%98%93%E7%83%8A%E5%8D%83%E7%8E%BA?fromModule=lemma_search-box">易烊千玺</a></div>Jackson Yi
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/box1_img4.png" alt="">
+							<div class="text1"><a href="#">Consulting</a></div>Etiam dui eros na non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a commodo luctus libero.
+						</div>
+					</div>
+				</div> -->
+				
+			</div>
+			<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>TFBoys</h3>
+							<div class="text1" style="padding-left: 10%;padding-right: 10%">
+								TFBoys是中国内地三人男子组合，包括王俊凯、王源和易烊千玺。他们以健康向上和阳光活力的形象著称，备受年轻人喜爱。从2013年成立<br>
+								至今，他们已成为中国娱乐圈最具代表性的年轻偶像之一。在音乐领域，TFBoys以精湛的演唱和亲和的形象广受欢迎，他们的歌曲多为崇尚<br>
+								梦想、向往自由和积极向上的青春主题。在电影及电视剧方面，TFBoys也表现出色，如电影《昨日青空》和电视剧《超少年密码》等。此<br>
+								外，他们还参加过多档综艺节目，展现出了他们多才多艺的一面。TFBoys以正能量的形象为广大年轻人树立了榜样，成为年轻人心中的偶像<br>
+								和梦想。<br>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<div id="page4" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>影视作品</h3>
+					</div>
+				</div>
+				<div class="companies">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo1.jpg" alt="">
+							<div class="text1">满江红</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E6%BB%A1%E6%B1%9F%E7%BA%A2/60344617?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo2.jpg" alt="">
+							<div class="text1">个十百千万</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E4%B8%AA%E5%8D%81%E7%99%BE%E5%8D%83%E4%B8%87/60044244?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo3.jpg" alt="">
+							<div class="text1">奇迹笨小孩</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E5%A5%87%E8%BF%B9%C2%B7%E7%AC%A8%E5%B0%8F%E5%AD%A9/59872979?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo4.jpg" alt="">
+							<div class="text1">长津湖之水门桥</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E9%95%BF%E6%B4%A5%E6%B9%96%E4%B9%8B%E6%B0%B4%E9%97%A8%E6%A1%A5/59025670?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo5.jpg" alt="">
+							<div class="text1">青云志</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E9%9D%92%E4%BA%91%E5%BF%97/17545555?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo6.jpg" alt="">
+							<div class="text1">长安十二时辰</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E9%95%BF%E5%AE%89%E5%8D%81%E4%BA%8C%E6%97%B6%E8%BE%B0/20110435?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo7.jpg" alt="">
+							<div class="text1">送你一朵小红花</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E9%80%81%E4%BD%A0%E4%B8%80%E6%9C%B5%E5%B0%8F%E7%BA%A2%E8%8A%B1/50571501?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo8.jpg" alt="">
+							<div class="text1">中国医生</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%94%9F/50270751?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page5" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>个人专辑</h3>
+					</div>
+				</div>
+				<div class="companies">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo9.jpg" alt="">
+							<div class="text1">刘艳芬</div>
+							<br>
+							<a href="#">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo10.jpg" alt="">
+							<div class="text1">后座剧场</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E5%90%8E%E5%BA%A7%E5%89%A7%E5%9C%BA/55175683?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo11.jpg" alt="">
+							<div class="text1">温差感</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E6%B8%A9%E5%B7%AE%E6%84%9F/24216763?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo12.jpg" alt="">
+							<div class="text1">我乐意沉默释放内心焰火</div>
+							<br>
+							<a href="https://baike.baidu.com/item/%E6%88%91%E4%B9%90%E6%84%8F%E6%B2%89%E9%BB%98%E9%87%8A%E6%94%BE%E5%86%85%E5%BF%83%E7%84%B0%E7%81%AB/23186166?fromModule=lemma_inlink">了解详细</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="module-musicSingle j-common-module" nslog="area" nslog-type="575" id="module-music-2886426222">
+						<div class="musicSingle-wrapper nslog-area log-set-param" log-set-param="mod-music-single" data-nslog-type="590">
+						<table log-set-param="table_view" width="100%" class="musicSingle-list">
+						<thead>
+						<tr>
+						<th width="180">歌曲名称</th>
+						<th width="90">歌曲风格</th><th width="110">发行时间</th><th width="330">歌曲简介</th></tr></thead>
+						<tbody class="page-wrapper pager-1" style="display: table-row-group;"><tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E4%BB%8A%E5%A4%9C%E6%97%A0%E7%9C%A0/62599277?fromModule=lemma_inlink" data-lemmaid="62599277" data-log="text" data-module="musicSingle">今夜无眠</a></td>
+						<td>-</td>
+						<td>2023-1-22</td>
+						<td>电影《满江红》新春推广曲<sup class="sup--normal" data-sup="435" data-ctrmap=":435,"></sup><a class="sup-anchor" name="ref_435_4216763" id="ref_435_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						</tr>
+						<tr>
+						<td>沙金</td>
+						<td>-</td>
+						<td>2022-9-20<sup class="sup--normal" data-sup="422" data-ctrmap=":422,"></sup><a class="sup-anchor" name="ref_422_4216763" id="ref_422_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>王者荣耀2022云中赛年主题曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E5%85%89%E9%98%B4%E7%9A%84%E6%95%85%E4%BA%8B2022/61551258?fromModule=lemma_inlink" data-lemmaid="61551258" data-log="text" data-module="musicSingle">光阴的故事2022</a></td>
+						<td>-</td>
+						<td>2022-6-21</td>
+						<td>2022毕业歌<sup class="sup--normal" data-sup="410" data-ctrmap=":410,"></sup><a class="sup-anchor" name="ref_410_4216763" id="ref_410_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA/60048856?fromModule=lemma_inlink" data-lemmaid="60048856" data-log="text" data-module="musicSingle">海阔天空</a><sup class="sup--normal" data-sup="391" data-ctrmap=":391,">[391]</sup><a class="sup-anchor" name="ref_391_4216763" id="ref_391_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2022-2-2</td>
+						<td>电影《奇迹·笨小孩》陪伴曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E9%9B%AA%E8%8A%B1/59996635?fromModule=lemma_inlink" data-lemmaid="59996635" data-log="text" data-module="musicSingle">雪花</a><sup class="sup--normal" data-sup="365" data-ctrmap=":365,">[365]</sup><a class="sup-anchor" name="ref_365_4216763" id="ref_365_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2022-1-26<sup class="sup--normal" data-sup="365" data-ctrmap=":365,"></sup><a class="sup-anchor" name="ref_365_4216763" id="ref_365_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>《长津湖之水门桥》电影主题曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E8%BF%98%E6%98%AF%E7%AC%A8%E5%B0%8F%E5%AD%A9/59826402?fromModule=lemma_inlink" data-lemmaid="59826402" data-log="text" data-module="musicSingle">还是笨小孩</a><sup class="sup--normal" data-sup="364" data-ctrmap=":364,">[364]</sup><a class="sup-anchor" name="ref_364_4216763" id="ref_364_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2022-1-7</td>
+						<td>电影《奇迹·笨小孩》宣传主题曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E5%9B%9B%E5%AD%97%E6%AD%8C/59318558?fromModule=lemma_inlink" data-lemmaid="59318558" data-log="text" data-module="musicSingle">四字歌</a><sup class="sup--normal" data-sup="392" data-ctrmap=":392,">[392]</sup><a class="sup-anchor" name="ref_392_4216763" id="ref_392_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2021-11-28</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E4%B8%80%E8%B5%B7%E5%90%91%E6%9C%AA%E6%9D%A5/58571874?fromModule=lemma_inlink" data-lemmaid="58571874" data-log="text" data-module="musicSingle">一起向未来</a><sup class="sup--normal" data-sup="393" data-ctrmap=":393,">[393]</sup><a class="sup-anchor" name="ref_393_4216763" id="ref_393_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2021-9-21</td>
+						<td>冬奥主题口号推广歌曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E6%9C%AA%E6%9D%A5%EF%BC%8C%E8%AF%B7%E4%BD%A0%E6%9D%A5%EF%BC%81/55608842?fromModule=lemma_inlink" data-lemmaid="55608842" data-log="text" data-module="musicSingle">未来，请你来！</a></td>
+						<td>-</td>
+						<td>2020-12-21</td>
+						<td>空天歌曲<sup class="sup--normal" data-sup="158" data-ctrmap=":158,"></sup><a class="sup-anchor" name="ref_158_4216763" id="ref_158_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/1%E8%B5%B7%E6%8C%BA%E4%BD%A0/54160000?fromModule=lemma_inlink" data-lemmaid="54160000" data-log="text" data-module="musicSingle">1起挺你</a></td>
+						<td>流行</td>
+						<td>2020-10-30</td>
+						<td>天猫双11主题曲</td>
+						</tr>
+						</tbody><tbody class="page-wrapper pager-2" style="display: none;"><tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E7%B9%81%E6%98%9F%E8%BF%BD%E6%A2%A6/54063212?fromModule=lemma_inlink" data-lemmaid="54063212" data-log="text" data-module="musicSingle">繁星追梦</a><sup class="sup--normal" data-sup="394" data-ctrmap=":394,">[394]</sup><a class="sup-anchor" name="ref_394_4216763" id="ref_394_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2020-10-22</td>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/18752941?fromModule=lemma_inlink" data-lemmaid="18752941" data-log="text" data-module="musicSingle">王者荣耀</a>梦想主题曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/My%20Boo/53283801?fromModule=lemma_inlink" data-lemmaid="53283801" data-log="text" data-module="musicSingle">My Boo</a></td>
+						<td>流行</td>
+						<td>2020-8-18</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E7%B2%89%E9%9B%BE%E6%B5%B7/53238250?fromModule=lemma_inlink" data-lemmaid="53238250" data-log="text" data-module="musicSingle">粉雾海</a></td>
+						<td>流行</td>
+						<td>2020-8-13</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E6%9C%8B%E5%8F%8B%E8%AF%B7%E5%90%AC%E5%A5%BD/24433126?fromModule=lemma_inlink" data-lemmaid="24433126" data-log="text" data-module="musicSingle">朋友请听好</a><sup class="sup--normal" data-sup="395" data-ctrmap=":395,">[395]</sup><a class="sup-anchor" name="ref_395_4216763" id="ref_395_4216763" data-log="text" data-module="musicSingle">&nbsp;</a></td>
+						<td>-</td>
+						<td>2020-2-14</td>
+						<td>综艺节目《谢娜合唱》</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E4%B8%8D%E5%88%86%E6%98%BC%E5%A4%9C/24256484?fromModule=lemma_inlink" data-lemmaid="24256484" data-log="text" data-module="musicSingle">不分昼夜</a></td>
+						<td>-</td>
+						<td>2020-01-09</td>
+						<td>电影《夺冠》推广曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E5%86%B7%E9%9D%99%E5%92%8C%E7%83%AD%E6%83%85%E4%B9%8B%E9%97%B4/24169298?fromModule=lemma_inlink" data-lemmaid="24169298" data-log="text" data-module="musicSingle">冷静和热情之间</a></td>
+						<td>-</td>
+						<td>2019-11-28</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E5%BF%B5%E6%83%B3/24117935?fromModule=lemma_inlink" data-lemmaid="24117935" data-log="text" data-module="musicSingle">念想</a></td>
+						<td>-</td>
+						<td>2019-11-01</td>
+						<td>电影《少年的你》情感曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/I%20Adore%20You/23993254?fromModule=lemma_inlink" data-lemmaid="23993254" data-log="text" data-module="musicSingle">I Adore You</a></td>
+						<td>-</td>
+						<td>2019-10-21</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/Fall/23663681?fromModule=lemma_inlink" data-lemmaid="23663681" data-log="text" data-module="musicSingle">Fall</a></td>
+						<td>-</td>
+						<td>2019-08-09</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E9%99%B7%E8%90%BD%E7%BE%8E%E5%A5%BD/23650022?fromModule=lemma_inlink" data-lemmaid="23650022" data-log="text" data-module="musicSingle">陷落美好</a></td>
+						<td>-</td>
+						<td>2019-08-02</td>
+						<td>个人单曲</td>
+						</tr>
+						</tbody><tbody class="page-wrapper pager-3" style="display: none;"><tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E7%B2%BE%E5%BD%A9%E6%89%8D%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B/22932469?fromModule=lemma_inlink" data-lemmaid="22932469" data-log="text" data-module="musicSingle">精彩才刚刚开始</a></td>
+						<td>-</td>
+						<td>2018-10-15</td>
+						<td>个人单曲、<a target="_blank" href="https://baike.baidu.com/item/%E5%A4%A9%E7%8C%AB/2551565?fromModule=lemma_inlink" data-lemmaid="2551565" data-log="text" data-module="musicSingle">天猫</a>双11十年主题曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E7%81%BE/22831199?fromModule=lemma_inlink" data-lemmaid="22831199" data-log="text" data-module="musicSingle">灾</a></td>
+						<td>-</td>
+						<td>2018-08-21</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E4%B8%B9%E9%9D%92%E5%8D%83%E9%87%8C/22765826?fromModule=lemma_inlink" data-lemmaid="22765826" data-log="text" data-module="musicSingle">丹青千里</a></td>
+						<td>-</td>
+						<td>2018-07-25</td>
+						<td>个人单曲</td>
+						</tr>
+						<tr>
+						<td>Boyfriend</td>
+						<td>-</td>
+						<td>2017-11-28</td>
+						<td>个人翻唱</td>
+						</tr>
+						<tr>
+						<td>All of Me</td>
+						<td>-</td>
+						<td>2017-11-28</td>
+						<td>个人翻唱</td>
+						</tr>
+						<tr>
+						<td>喜剧之王</td>
+						<td>-</td>
+						<td>2017-11-28</td>
+						<td>翻唱李荣浩歌曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/%E4%BD%A0%E7%9A%84%E7%88%B1/16628077?fromModule=lemma_inlink" data-lemmaid="16628077" data-log="text" data-module="musicSingle">你的爱</a></td>
+						<td>-</td>
+						<td>2017-11-28</td>
+						<td>翻唱王力宏歌曲</td>
+						</tr>
+						<tr>
+						<td><a target="_blank" href="https://baike.baidu.com/item/Unpredictable/21361151?fromModule=lemma_inlink" data-lemmaid="21361151" data-log="text" data-module="musicSingle">Unpredictable</a></td>
+						<td>-</td>
+						<td>2017-11-28</td>
+						<td>个人单曲</td>
+						</tr>
+						</tbody></table>
+						</div>
+						<div class="musicSingle-pager">
+							<div class="module-pager">
+								<span><em class="index">1</em>/7</span><a href="javascript:;" class="pTag prev disabled"><em class="cmn-icon cmn-icons cmn-icons_arrow-l-2"></em></a>
+								<a href="javascript:;" class="pTag next"><em class="cmn-icon cmn-icons cmn-icons_arrow-r-2"></em></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page6" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>舞蹈作品</h3>
+					</div>
+				</div>
+				<div class="companies">
+					<table log-set-param="table_view" class="transparentBorder" data-sort="sortDisabled" data-id="gocyip3ijb">
+						<tbody>
+							<tr data-id="gocyip3ol1">
+							<th align="center" width="108" data-id="gocyip3r2g">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3r5f">时间</div>
+							</th>
+							<th align="center" width="338" data-id="gocyip3r8s">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3rbc">舞蹈名称</div>
+							</th>
+							<th align="center" width="302" data-id="gocyip3rem">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3rh2">表演场合</div>
+							</th></tr>
+							<tr data-id="gocyip3ooa"><td align="center" width="108" data-id="gocyip3rkb">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3rmq">2012-02-20</div>
+							</td>
+							<td align="center" width="338" data-id="gocyip3rpz">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3rsj">《Niggas In Paris》</div>
+							</td>
+							<td align="center" width="302" data-id="gocyip3rvs">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3rx7">嘉禾舞社表演</div>
+							</td></tr>
+							<tr data-id="gocyip3or2"><td align="center" width="108" data-id="gocyip3s0e">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3s2s">2013-11-25</div>
+							</td>
+							<td align="center" width="338" data-id="gocyip3s60">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3s8e">《Slow And Easy》</div>
+							</td>
+							<td align="center" width="302" data-id="gocyip3sbl">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3sdz">嘉禾舞社公开课</div>
+							</td></tr>
+							<tr data-id="gocyip3ou3">
+								<td align="center" width="108" data-id="gocyip3sh6">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3sjj">2013-12-09</div>
+							</td>
+							<td align="center" width="338" data-id="gocyip3sm0">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3soe">《Latch》</div></td>
+							<td align="center" width="302" data-id="gocyip3sqj">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3ssy">嘉禾舞社表演</div></td>
+							</tr>
+							<tr data-id="gocyip3ox9"><td align="center" width="108" data-id="gocyip3sw7">
+								<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3syk">2013-12-23</div></td>
+								<td align="center" width="338" data-id="gocyip3t1s">
+									<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3t46">《Dancerss》</div></td>
+									<td align="center" width="302" data-id="gocyip3t7f">
+										<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3t9s">嘉禾舞社表演</div>
+									</td>
+								</tr>
+										<tr data-id="gocyip3p0h"><td align="center" width="108" data-id="gocyip3tc7">
+											<div class="para MARK_MODULE" label-module="para" data-uuid="gocyip3tek">2014-05-03</div>
+									
+</tr></tbody></table>
+					
+					
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="copy">
+							该页面仅供娱乐，如有侵权请联系qq：2126353359<a target="_blank" href="http//www.zjf88.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+<script>
+const imgListOne = document.querySelector('.img-list')
+	// 获取图片类数组，并将其转化为数组
+	let imgBoxList = Array.prototype.slice.call(document.querySelectorAll('.img-list .img-box'))
+	const imgBoxCount = imgBoxList.length
+	const root = document.documentElement;
+	const btnGroup = document.querySelector('.btn-group')
+	const lastBtn = document.querySelector('.last')
+	const nextBtn = document.querySelector('.next')
+	const lastImgBox = document.getElementById('last-img-box')
+
+	// 获取--post-spacing和--post-size的值
+	const postSpacing = Number(getComputedStyle(root).getPropertyValue('--post-spacing').replace("vw", ""));
+	const postSize = Number(getComputedStyle(root).getPropertyValue('--post-size').replace("vw", ""));
+
+	// 根据图片的数量动态获取img-list的宽度
+	let imgListLength = (postSize + postSpacing) * imgBoxCount
+	console.log(imgListLength);
+	// 根据图片的数量动态获取img-box的宽度
+	const imgBoxLength = postSize + postSpacing
+
+	let index = 0
+	let indexOne = 1
+	let timer = null
+	let animationTime = 0.5
+
+	// 初始化数组中元素的的顺序，将最后一张图片放在第一位与html部分图片展示位置一致
+	imgBoxList.unshift(imgBoxList.pop())
+	// 设置imgListOne动画时间
+	imgListOne.style.transition = animationTime + 's ease'
+	// 设置按钮出现时间
+	setTimeout(function () {
+		btnGroup.style.opacity = '1'
+		btnGroup.style.bottom = '5%'
+	}, animationTime * 1000)
+	// 点击事件
+	function cilckFun(flag) {
+		//下一张 next
+		if (flag == 'next') {
+			index--
+			console.log(index);
+			// 因为右边没有显示的图片比较多，所以可以直接先整体向左移动
+			imgListOne.style.left = imgBoxLength * index + "vw";
+			setTimeout(function () {
+				imgListOne.style.transition = 'none'
+				// 当点击下一个累计达到图片数量时，相当于要回到原点，则重置变量和位置
+				if (Math.abs(index) == imgBoxCount) {
+					index = 0
+					imgListOne.style.left = 0
+					imgBoxList.forEach(item => {
+						if (item.id == 'last-img-box') {
+							item.style.transform = `translateX(-160.68vw)`
+						} else {
+							item.style.transform = 'none'
+						}
+					});
+				} else {
+					// 当第一张图片为last-img-box时，说明已经跑完了一轮，则将其放在最后的位置，初始状态其为-160.68vw
+					if (imgBoxList[0].id == 'last-img-box') {
+						lastImgBox.style.transition = 'none'
+						lastImgBox.style.transform = 'translateX(0px)'
+					} else if (index >= 0) {
+						/*  
+							这种情况是为了解决在点击完第last，再点击next时造成的bug问题，其实就是回退，再点击last之前
+							没有加transform属性，点击last以后则添加了transform属性，再次点击next按钮后应该不加transform
+						*/
+						imgBoxList[0].style.transform = 'none'
+					} else {
+						// 正常情况下，点击next，则将最左侧的图片移到最后
+						imgBoxList[0].style.transform = 'translateX(160.68vw)'
+					}
+				}
+				// 模拟移动情况，将最左侧的图片（元素）移动到最后
+				imgBoxList.push(imgBoxList.shift())
+			}, animationTime * 1000)
+		} else {
+			// 上一张 last
+			index++
+			console.log(index);
+			// 模拟移动情况，把最右侧的图片（元素）移动到最前
+			imgBoxList.unshift(imgBoxList.pop())
+			// 因为左侧图片只会有一张，所以需要先移动图片到左侧，再进行imgListOne的移到
+			if (imgBoxList[0].id == 'last-img-box' && index != 0) {
+				// 当第一张图片为last-img-box时，说明已经跑完了一轮，此时相对于一开始的位置为-321.36vw
+				imgBoxList[0].style.transform = 'translateX(-321.36vw)'
+			} else if (index < 0) {
+				// 这种情况与点击next按钮出现的回退现象一致
+				imgBoxList[0].style.transform = 'none'
+			} else {
+				// 正常情况下，点击last，则将最右侧的图片移到最前
+				imgBoxList[0].style.transform = 'translateX(-160.68vw)'
+			}
+			imgListOne.style.left = imgBoxLength * index + "vw";
+			lastImgBox.style.transition = 'none'
+			// 当点击下一个累计达到图片数量时，相当于要回到原点，则重置变量和位置
+			if (Math.abs(index) == imgBoxCount) {
+				index = 0
+				setTimeout(function () {
+					imgListOne.style.transition = 'none'
+					imgListOne.style.left = 0
+					imgBoxList.forEach(item => {
+						if (item.id == 'last-img-box') {
+							item.style.transform = 'translateX(-160.68vw)'
+						} else {
+							item.style.transform = 'none'
+						}
+					});
+				}, animationTime * 1000)
+			}
+		}
+		imgListOne.style.transition = animationTime + 's ease'
+	}
+
+	//节流函数
+	function throttle(fn, delay) {
+		return function () {
+			if (timer) {
+				return
+			}
+			fn.apply(this, arguments)
+			timer = setTimeout(() => {
+				timer = null
+			}, delay)
+		}
+	}
+
+	nextBtn.onclick = throttle(() => cilckFun('next'), animationTime * 1000);
+
+	lastBtn.onclick = throttle(() => cilckFun('last'), animationTime * 1000);
+
+
+
+
+	// // 获取左右按钮和图片列表
+	// let oLeft = document.querySelector(".left");
+	// let oRight = document.querySelector(".right");
+	// let oImgList = document.querySelector(".img-list");
+
+	// // 克隆第一张图片
+	// let clonefirstImg = oImgList.firstElementChild.cloneNode();
+	// // 将第一张图片添加至图片列表的末尾
+	// oImgList.appendChild(clonefirstImg);
+
+	// // 图片索引 代表当前是第几张图片  index:0代表第一张图片
+	// let index = 0;
+
+	// // 设置函数节流锁
+	// let lock = true;
+	// function handleRightBtn() {
+	//   if (!lock) return;
+	//   index++;
+	//   oImgList.style.left = index * -1226 + "px";
+	//   // 为什么要加过渡? 因为切换到了最后一张假图时会将过渡去掉
+	//   oImgList.style.transition = "0.5s ease";
+
+	//   if (index === 5) {
+	// 	index = 0;
+	// 	setTimeout(() => {
+	// 	  oImgList.style.left = 0;
+	// 	  // 取消过渡 500毫秒之后切换第一张
+	// 	  oImgList.style.transition = "none";
+	// 	}, 500);
+	//   }
+
+	//   // 设置小圆点的高亮
+	//   setCircles();
+	//   // 关锁
+	//   lock = false;
+	//   setTimeout(() => {
+	// 	lock = true;
+	//   }, 500);
+	// }
+
+	// // 右按钮的实现
+	// oRight.addEventListener("click", handleRightBtn);
+
+	// // 左按钮的实现  瞬间切换到假图然后拉到真实最后一张图片
+	// oLeft.addEventListener("click", () => {
+	//   if (!lock) return;
+	//   index--;
+	//   if (index === -1) {
+	// 	oImgList.style.left = 5 * -1226 + "px";
+	// 	oImgList.style.transition = "none";
+	// 	index = 4;
+	// 	setTimeout(() => {
+	// 	  oImgList.style.left = index * -1226 + "px";
+	// 	  oImgList.style.transition = "0.5s ease";
+	// 	}, 0);
+	//   } else {
+	// 	oImgList.style.left = index * -1226 + "px";
+	//   }
+
+	//   // 设置小圆点的高亮
+	//   setCircles();
+
+	//   lock = false;
+	//   setTimeout(() => {
+	// 	lock = true;
+	//   }, 500);
+	// });
+
+	// // 获取五个小圆点
+	// const circles = document.querySelectorAll(".circle");
+
+	// // 小圆点高亮的显示
+	// function setCircles() {
+	//   for (let i = 0; i < circles.length; i++) {
+	// 	if (i === index) {
+	// 	  circles[i].classList.add("active");
+	// 	} else {
+	// 	  circles[i].classList.remove("active");
+	// 	}
+	//   }
+	// }
+
+	// // 小圆点点击切换图片 使用事件代理
+	// const oCircle = document.querySelector(".circle-list");
+	// oCircle.addEventListener("click", (e) => {
+	//   // 当我点击小圆点的时候
+	//   if (e.target.nodeName.toLowerCase() === "li") {
+	// 	// 当前元素的data-n对应得值 和index一一对应
+	// 	const n = Number(e.target.getAttribute("data-n"));
+	// 	index = n;
+	// 	setCircles();
+	// 	oImgList.style.transition = "0.5s ease";
+	// 	oImgList.style.left = index * -1226 + "px";
+	//   }
+	// });
+
+	// // 自动轮播
+	// let autoplay = setInterval(handleRightBtn, 2000);
+	// const oWrap = document.getElementById("wrap");
+	// // 移入停止轮播
+	// oWrap.addEventListener("mouseenter", () => {
+	//   clearInterval(autoplay);
+	// });
+	// // 移出继续轮播
+	// oWrap.addEventListener("mouseleave", () => {
+	//   // 设表先关
+	//   clearInterval(autoplay);
+	//   autoplay = setInterval(handleRightBtn, 2000);
+	// });
+
+	// // https://segmentfault.com/a/1190000018445196
+</script>
+</body>
+</html>
